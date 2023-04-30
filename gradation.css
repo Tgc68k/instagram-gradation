@@ -1,0 +1,276 @@
+@charset"utf-8";
+
+*{
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+
+
+
+body{
+  background-color: white;
+}
+
+
+div{
+	display:block;
+}
+
+/* border = solid ?px color*/
+
+/* If elements overlap the header, remove position:fixed and it will be fixed. */
+
+
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+
+
+h1{
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 160%;
+    margin-right:0%;
+    top: 0%;
+    left: 5%;
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, #833ab4, #fd1d1d, #fcb045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.g{
+    color: red;
+}
+
+.r{
+    color: orange;
+}
+
+.a{
+    color: yellow;
+}
+
+.d{
+    color: rgb(128, 255, 43);
+}
+
+.aa{
+    color: green;
+}
+
+.t{
+    color: #5CCDFF;
+}
+
+.i{
+    color: blue;
+}
+
+.o{
+    color: purple;
+}
+
+.n{
+    color: pink;
+}
+
+.button{/*ボタンの下地*/
+    color: #FFF;/*文字・アイコン色*/
+    border-radius: 7px;/*角丸に*/
+    position: relative;
+    display: inline-block;
+    height: 50px;/*高さ*/
+    width: 170px;/*幅*/
+    text-align: center;/*中身を中央寄せ*/
+    font-size: 25px;/*文字のサイズ*/
+    line-height: 50px;/*高さと合わせる*/
+    background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+    overflow: hidden;/*はみ出た部分を隠す*/
+    text-decoration:none;/*下線は消す*/
+    border-radius: 50px;
+  }
+
+  .button:before{/*グラデーション②*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;/*全体を覆う*/
+    height: 100%;/*全体を覆う*/
+    background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+    background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+  }
+
+  .button span {/*テキスト*/
+    display:inline-block;
+    position: relative;
+    transition: .5s
+  }
+
+
+  .button:hover{/*ホバーで一周回転*/
+    -webkit-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+
+  /*↓↓From here to below is the CSS to put the code*/
+
+
+
+  code {
+    font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+
+}
+
+  /*up to here*/
+
+.select{
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+}
+
+#select1{
+
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-weight: bold;
+    padding: 0; /*important*/
+}
+
+
+#select2{
+
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-weight: bold;
+    padding: 0; /*important*/
+}
+
+
+#select3{
+
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-weight: bold;
+    padding: 0; /*important*/
+
+}
+
+
+#select4{
+
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    padding-left: 40px; /*important*/
+
+
+}
+
+
+
+pre{
+    float:left;
+    position: absolute;
+    top: 70%;
+    color: white;
+    border:medium solid white;
+    padding-right: 15px;
+
+}
+
+
+h2{
+    margin: 0px;
+    position: absolute;
+    top: 65%;
+    left: 37%;
+    color: white;
+    font-weight: bold;
+}
+
+.circle{
+    padding-right: 20px;
+}
+
+.horizontal{
+    padding-right: 15px;
+}
+
+
+/*clear float*/
+.clear{
+    clear:left;
+}
+
+
+
+button{
+    float: right;
+    appearance: none;
+    border: 0;
+    border-radius: 100px ;
+    background: .4676D7;
+    color: #fff;
+    padding: 8px 30px;
+    font-size: 16px;
+    margin-top: 15px;
+
+
+}
+
+/*:hover*/
+
+button:hover{
+    background: .5CCDFF;
+    transition: 1.0s;
+}
+
+
+.flex_box{
+    display: flex;
+}
+
+li,ol{
+    list-style: none;
+}
+
+a:link,a:visited, a:hover,a:active{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+height:auto;
+}
+
+.inner{
+    width: 1100px;
+    max-width: 100%;
+    margin:auto;
+}
+
+.wrap{
+    overflow: hidden;
+}

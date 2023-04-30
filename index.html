@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--alt + z = line break-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Instagram GRADATION</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--style css-->
+    <!--aos sorce below-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="gradation.css" media="all">
+    <link rel="stylesheet" href="gradation2.css" media="all">
+
+    <!--font-awesome-->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!--jquery-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <!-- wow -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"
+        type="text/css" media="all">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+
+
+        <!-- header -->
+        <header class="header">
+            <div class="inner">
+
+            </div>
+        </header><!-- header end -->
+        <h1> <i class="fab fa-instagram"></i>Instagram <br> <span class="g">G</span><span class="r">R</span><span class ="a">A</span><span class ="d">D</span><span class="aa">A</span><span class="t">T</span><span class="i">I</span><span class="o">O</span><span class="n">N</span></h1>
+<!--↓I tried it in Japanese and it looked so bad that I stopped it.↓-->
+        <button name="color" id="select1" class="button">
+            Vertical
+        </button>
+
+        <button name="color" id="select2" class="button">
+            Horizontal
+        </button>
+
+        <button name="color" id="select3" class="button">
+            Circle
+        </button>
+
+        <select name="color" id="select4" class="button">
+            <option value="white">Angle ▼</option>
+            <option value="red"  class="g select">30°</option>
+            <option value="orange" class="r select">60°</option>
+            <option value="green" class="aa select">---180°---</option>
+            <option value="water" class="t select">210°</option>
+            <option value="blue" class="i select">240°</option>
+            <option value="purple" class="o select">|||270°|||</option>
+            <!--↑↑GOOD UI ||| --- ↑↑-->
+
+        </select>
+
+
+
+
+
+<h2>↓ CSS ↓</h2>
+
+
+        <pre><code class="vertical">
+       body{
+         background: linear-gradient
+         (90deg, #fcb045, #FF8C00 30%,
+         #fd1d1d 60%, #833ab4);
+       }
+            </code></pre>
+
+        <pre><code class="horizontal">
+       body{
+         background: linear-gradient
+         (0deg, #fcb045, #FF8C00 30%,
+         #fd1d1d 60%, #833ab4);
+       }
+            </code></pre>
+
+        <pre><code class="circle">
+       body{
+         background: radial-gradient
+         (#fcb045,#FF8C00 30%,
+         #fd1d1d 60%, #833ab4);
+       }
+            </code></pre>
+        <pre><code class="angle3">
+       body{
+         background: linear-gradient
+         (30deg, #fcb045, #FF8C00 30%,
+         #fd1d1d 60%, #833ab4);
+       }
+            </code></pre>
+        <pre><code class="angle6">
+       body{
+         background: linear-gradient
+         (60deg, #fcb045, #FF8C00 30%,
+         #fd1d1d 60%, #833ab4);
+       }
+            </code></pre>
+
+        <pre><code class="angle18">
+       body{
+         background: linear-gradient
+         (180deg, #fcb045, #FF8C00 30%,
+         #fd1d1d 60%, #833ab4);
+       }
+            </code></pre>
+
+        <pre><code class="angle21">
+       body{
+         background: linear-gradient
+         (210deg, #fcb045, #FF8C00 30%,
+         #fd1d1d 60%, #833ab4);
+       }
+            </code></pre>
+
+        <pre><code class="angle24">
+       body{
+         background: linear-gradient
+         (240deg, #fcb045, #FF8C00 30%,
+         #fd1d1d 60%, #833ab4);
+       }
+            </code></pre>
+
+        <pre><code class="angle27">
+       body{
+         background: linear-gradient
+         (270deg, #fcb045, #FF8C00 30%,
+         #fd1d1d 60%, #833ab4);
+       }
+            </code></pre>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner">
+
+            </div>
+        </footer><!-- footer end -->
+
+    </div>
+    <!--wrapper end-->
+
+    <!-- script js-->
+    <script src="gradation.js"></script>
+    <!-- wow -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!--AOS sorces-->
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
